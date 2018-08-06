@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Schedule</title>
+	<link rel="stylesheet" type="text/css" href="css/schedule-style.css">
+
+	<style>
+	table{
+		width: 100%;
+		border-collapse: collapse; /* Убираем двойную рамку между ячейками */
+		font-family: arial, sans-serif;
+	}
+	td, th{
+		padding: 6px; /* Поля вокруг текста */
+		text-align: left;
+		border: 1px solid #dddddd; /* Параметры границы */
+	}
+	caption {
+ 	 font-weight: bold;
+ 	 font-size: 170%;
+ 	}
+
+	tr:nth-child(even) {   /*Псевдокласс :nth-child используется для добавления стиля к элементам(tr) на основе нумерации в дереве элементов,even - применяется ко всем четным элементам*/
+    background-color: #dddddd;    
+}
+
+</style>
+</head>
+
+<body>
+	<header style="left: 0px; width: 100%; position: fixed; min-width: 980px; margin-left: 0px; margin-top: 0px; z-index: 50; top: 0px; height: 55px;" class="style-io8ilb41">
+			<div style="height: 100%;  margin-left:150px;">
+
+				<nav style="height: 100%" >
+					<nav id="menu">
+						<a href="main.html#main">Main</a>
+						<a href="main.html#inf">About me</a>
+						<a href="main.html#gallery">Gallery</a>
+						<a href="main.html#contacts">Contacts</a>
+					</nav>
+					<nav>
+						<a href="postcard.html">Postcard</a>
+						<a href="schedule.html">Scedule</a>
+					</nav>
+					
+				</nav>
+				
+			</div>
+
+			<div style="left: 870px; width: 277px; position: absolute; margin-left: calc((100% - 980px) * 0.5); top: 5px;" class="text-header">
+				<a href="tel:+375 44 734 69 54" style=" text-decoration: none;  color: rgb(85, 26, 139); font-size:24px;">+375 44 734 69 54</a>
+				<p style="font-size:16px; color: rgb(85, 26, 139); margin-left:10px; " class="phone">Call me</p>
+				
+			</div>
+			
+		</header>
+
+<table style="margin-top:80px">
+	<caption>Расписание</caption>
+	<tr>
+		<th>Понедельник</th>
+		<th>Вторник</th>
+		<th>Среда</th>
+		<th>Четверг</th>
+		<th>Пятница</th>
+		<th>Суббота</th>
+	</tr>
+	<tr>
+		<td>Физкультура 8:15</td>
+		<td>УП 19:00</td>
+		<td>ФАН 8:15</td>
+		<td>Физкультура 8:15</td>
+    	<td>ТА 8:15</td>
+    	<td>ДУ 8:15</td>
+	</tr>
+		<td>ТА 9:45</td>
+		<td>УП 20:35</td>
+		<td>ТВиМС 9:45</td>
+		<td>ТВиМС 9:45</td>
+		<td>ОС 9:45</td>
+		<td>ДУ 9:45</td>
+	<tr>
+		<td>ОС 11:15</td>
+   		<td></td>
+    	<td>ФАН 11:15</td>
+    	<td>ТА 11:15</td>
+    	<td>МЧА 11:15</td>
+    	<td></td>
+	</tr>
+		<td>МЧА 13:00</td>
+    	<td></td>
+    	<td>ТВиМС 13:00</td>
+    	<td></td>
+    	<td>ТА 13:00</td>
+    	<td></td>	
+</table>
+</body>
+</html>

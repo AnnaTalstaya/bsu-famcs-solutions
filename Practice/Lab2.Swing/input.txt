@@ -1,0 +1,6 @@
+2 4 Talstaya Anna
+3 1 Ponomarev Kirill
+1 7 Ivanova Anastasia
+1 7 Korolev Vladimir
+2 2 Pushkin Nicolai
+2 2 Pushkin Anton

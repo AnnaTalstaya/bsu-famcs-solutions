@@ -1,0 +1,62 @@
+
+
+div{
+  display: block;
+}
+
+
+header {
+  text-align: justify;
+  background: #FFF;
+  color:rgb(85, 26, 139);
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  overflow: hidden;
+}
+
+header nav {
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  overflow: hidden;
+}
+
+header nav a{
+   padding: 0 0.6em;
+  white-space: nowrap;
+  text-decoration: none;
+  float:left; 
+  padding: 18px 20px;
+  margin-left:15px;
+  color:rgb(85, 26, 139);
+
+}
+
+header nav a:hover{
+  background-color:#00008B;
+  color:white;
+
+}
+
+.text-header{
+  word-wrap: break-word;
+  text-align: start;
+}
+
+.text-header p{
+  margin:0;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.phone{
+  font-family: "Arial", sans-serif;
+}
+.style-io2bebd6inlineContent, .style-io2bebd6bg{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}

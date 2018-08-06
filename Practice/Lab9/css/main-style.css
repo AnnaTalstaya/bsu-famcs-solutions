@@ -1,0 +1,307 @@
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+
+}
+
+div{
+  display: block;
+}
+
+
+header {
+  text-align: justify;
+  background: #FFF;
+  color:rgb(85, 26, 139);
+  text-decoration: none;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+  overflow: hidden;
+}
+
+header nav {
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  overflow: hidden;
+}
+
+header nav a{
+  padding: 0 0.6em;
+  white-space: nowrap;
+  text-decoration: none;
+  float:left; 
+  padding: 18px 20px;
+  margin-left:15px;
+  color:rgb(85, 26, 139);
+}
+
+header nav a:hover{
+  background-color:#00008B;
+  color:white;
+
+}
+
+.full-page{
+
+}
+
+.sections{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.strc1{
+  display: grid;
+  background-color: #85E8F8;
+  -webkit-box-pack:center;
+  justify-content: center;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr;
+}
+
+.style-io2bebd6inlineContent, .style-io2bebd6bg{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.style-io2bebd6bg{
+  border:1px solid rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 0;
+}
+
+.style-io2bebd6b{
+  border:0px solid rgba(0, 0, 0, 1);
+  background-color: rgba(255, 255, 255, 0.45);
+  border-radius: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+
+.strc1inlineContent{
+  right: 0;
+  left: 0;
+}
+
+.wp2img{
+  overflow: hidden;
+}
+
+.text{
+  word-wrap: break-word;
+  text-align: start;
+  pointer-events: none;
+}
+
+.text-header{
+  word-wrap: break-word;
+  text-align: start;
+}
+
+.text-header p{
+ margin:0;
+ line-height: normal;
+ letter-spacing: normal;
+}
+
+.text p{
+  margin:0;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+.text h1{
+  margin: 0;
+  letter-spacing: normal;
+}
+
+.text h4{
+  margin: 0;
+  letter-spacing: normal;
+}
+
+
+.font_0{
+  font:normal normal bold 40px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
+  color: #A0A09F;
+}
+
+.font_4{
+  font:normal normal normal 40px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
+  color:#605E5E;
+}
+
+.font_8{
+  font:normal normal normal 15px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
+  color:#605E5E;
+}
+
+.color_11{
+  color:#FFFFFF;
+}
+
+.strc1balata{
+  grid-row-start: 1;
+  grid-column-start: 1;
+  grid-row-end: 2;
+  grid-column-end : 2;
+  margin:0 auto;
+}
+
+.phone{
+  font-family: "Arial", sans-serif;
+}
+
+.container-fluid{
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.col-md-4{
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-sm-4{
+  float: left;
+  width: 33.33333333%;
+}
+
+.col-xs-12{
+  float: left;
+}
+
+.ug-gallery-wrapper {
+  z-index: 0;
+}
+
+h6{
+  font-size: 30px;
+  line-height: 1.5;
+  letter-spacing: 0.12em;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #29293a;
+}
+
+.divider_thin{
+  margin-top: 13px;
+  border-top: 1px solid #d2d5e4;
+}
+
+.box_inline{
+  margin-top: 35px;
+  margin-left: -7px;
+  display: table;
+  text-align: center;
+}
+
+h5{
+ font-size: 27px;
+ line-height: 1.5;
+ letter-spacing: 0.12em;
+ margin-top: 0;
+ margin-bottom: 0;
+ font-family: "Roboto", sans-serif;
+ font-weight: 500;
+ text-transform: uppercase;
+ color: #29293a;
+ font-style: bold;
+}
+
+.span1{
+  font-family: "Roboto", sans-serif;
+  font-size: 21px;
+  color: #605E5E;
+}
+
+.mail-style{
+  font-family: "Roboto", sans-serif;
+  font-size: 21px;
+  color: #605E5E;
+  text-decoration: none;
+}
+
+.f-style{
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  color: #605E5E;
+  text-decoration: none;
+}
+
+
+.links div { width:90px; display:inline-block; }
+
+.style-link{
+  border: 0px solid white;
+  border-radius: 200%;
+}
+
+.style-t{
+  text-align: center;
+}
+
+h3{
+ font-family: "Freestyle Script", sans-serif;
+ font-size: 240px;
+ top: 2100px;
+}
+
+h2{
+  font-size: 40px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
