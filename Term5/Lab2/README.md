@@ -12,5 +12,5 @@
 В ателье хранятся квитанции об оказанных услугах. Необходимо выдавать на основании архива информацию о числе и характере заказов на текущие сутки, объеме выполненных услуг за текущий месяц, квартал.
 
 
-![](A:\bsu-famcs-solutions\PrivateFiles\images\Lab2\1.png)
+![](A:/bsu-famcs-solutions/PrivateFiles/images/Lab2/1.png)
 ![](A:\bsu-famcs-solutions\PrivateFiles\images\Lab2\2.png)
