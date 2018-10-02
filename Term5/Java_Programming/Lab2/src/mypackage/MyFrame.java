@@ -42,6 +42,11 @@ public class MyFrame extends JFrame {
 
     private boolean wasChanged = false;
 
+    private int numberInQuarter = 0;
+    private int numberInMonth = 0;
+    private double sumQuarter = 0;
+    private double sumMonth = 0;
+
     MyFrame() {
         super("Studio");
         setLayout(new BorderLayout());
@@ -329,21 +334,16 @@ public class MyFrame extends JFrame {
         int currentMonth = Integer.parseInt(arr[1]);
         int currentYear = Integer.parseInt(arr[2]);
         int currentQuarter = getQuarter(currentMonth);
-        int numberInQuarter = 0;
-        int numberInMonth = 0;
-        double sumQuarter = 0;
-        double sumMonth = 0;
+        numberInQuarter = 0;
+        numberInMonth = 0;
+        sumQuarter = 0;
+        sumMonth = 0;
 
-        for (Order order : editOrders) {
-            if (order.getQuarter() == currentQuarter && order.getYear() == currentYear) {
-                numberInQuarter++;
-                sumQuarter += order.getPrice();
-            }
-            if (order.getMonth() == currentMonth && order.getYear() == currentYear) {
-                numberInMonth++;
-                sumMonth += order.getPrice();
-            }
-        }
+        editOrders.stream().filter((order) -> order.getQuarter() == currentQuarter && order.getYear() == currentYear)
+                .forEach((order) -> {sumQuarter += order.getPrice(); numberInQuarter++;});
+        editOrders.stream().filter((order) -> order.getMonth() == currentMonth && order.getYear() == currentYear)
+                .forEach((order) -> {sumMonth += order.getPrice(); numberInMonth++;});
+
         analyzeArea.append("The number of orders in the current quarter : " + numberInQuarter + "\n");
         analyzeArea.append("Money from the current quarter : " + sumQuarter + "\n\n");
         analyzeArea.append("The number of orders in the current month : " + numberInMonth + "\n");
