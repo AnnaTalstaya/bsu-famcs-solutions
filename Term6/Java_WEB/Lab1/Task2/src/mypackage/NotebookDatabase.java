@@ -58,10 +58,10 @@ public class NotebookDatabase {
         }
     }
 
-    public void insertMobileNumber(String mobileNumber) {
+    public void insertMobileNumber(MobileNumber mobileNumber) {
         try {
             PreparedStatement preparedStatement = connection.prepareStatement(SQL_Commands.INSERT_MOBILE_NUMBER);
-            preparedStatement.setString(1, mobileNumber);
+            preparedStatement.setString(1, mobileNumber.getMobileNumber());
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
             System.out.println(e.getMessage());
@@ -89,6 +89,7 @@ public class NotebookDatabase {
                     mobileNumber = rsMobile.getString("mobile_number");
                 }
                 notebook.add(new Person(
+                        rs.getInt("id"),
                         rs.getString("first_name"),
                         rs.getString("surname"),
                         new MobileNumber(mobileNumber)
@@ -150,16 +151,20 @@ public class NotebookDatabase {
         return people;
     }
 
-    public ArrayList<String> showSurnameByMobileNumber(String mobile_number){
-        ArrayList<String> surnames = new ArrayList<String>();
+    public ArrayList<Person> showSurnameByMobileNumber(String mobile_number){
+        ArrayList<Person> surnames = new ArrayList<Person>();
         try{
-            PreparedStatement showPrStatement = connection.prepareStatement(SQL_Commands.SHOW_SURNAME_BY_PHONE_NUMBER);
+            PreparedStatement showPrStatement = connection.prepareStatement(SQL_Commands.SHOW_SURNAME_BY_MOBILE_NUMBER);
             showPrStatement.setString(1, mobile_number);
 
             ResultSet rs = showPrStatement.executeQuery();
 
             while(rs.next()){
-                surnames.add(rs.getString("surname"));
+                surnames.add(new Person(
+                        rs.getString("first_name"),
+                        rs.getString("surname"),
+                        new MobileNumber(rs.getString("mobile_number"))
+                ));
             }
 
         }catch (SQLException e){
@@ -176,13 +181,29 @@ public class NotebookDatabase {
 
             while (rs.next()) {
                 mobileNumbers.add(
-                        new MobileNumber(rs.getString("mobile_number"))
+                        new MobileNumber(rs.getInt("id"), rs.getString("mobile_number"))
                 );
             }
         } catch (SQLException e) {
             System.out.println(e.getMessage());
         }
         return mobileNumbers;
+    }
+
+    public int getLastIndex(String command){
+        try {
+            Statement getMobileNumbersStatement = connection.createStatement();
+            ResultSet rs = getMobileNumbersStatement.executeQuery(command);
+
+            if(rs.next()){
+                return rs.getInt("MAX(id)");
+            }
+
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+
+        return -1;
     }
 
 }

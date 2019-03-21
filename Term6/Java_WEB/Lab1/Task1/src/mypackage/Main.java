@@ -23,6 +23,7 @@ public class Main {
         System.out.println("5. Delete mobile number");
         System.out.println("6. Show phone number by surname");
         System.out.println("7. Show surname by phone number");
+        System.out.println("8. Show mobile numbers");
         System.out.println();
 
         Scanner scanner = new Scanner(System.in);
@@ -110,6 +111,13 @@ public class Main {
                     ArrayList<String> surnames = notebookDatabase.showSurnameByMobileNumber(mobileNumber);
                     for (String surname : surnames) {
                         System.out.println("Surname: " + surname);
+                    }
+                    break;
+                }
+
+                case 8: {
+                    for (MobileNumber mobileNumber : notebookDatabase.getMobileNumbers()) {
+                        System.out.println(mobileNumber);
                     }
                     break;
                 }
