@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mobileNumbers>
+    <MobileNumber>
+        <mobileNumber>123</mobileNumber>
+        <id>0</id>
+    </MobileNumber>
+    <MobileNumber>
+        <mobileNumber>444</mobileNumber>
+        <id>1</id>
+    </MobileNumber>
+    <MobileNumber>
+        <mobileNumber>7878</mobileNumber>
+        <id>2</id>
+    </MobileNumber>
+    <MobileNumber>
+        <mobileNumber>92</mobileNumber>
+        <id>3</id>
+    </MobileNumber>
+    <MobileNumber>
+        <mobileNumber>2</mobileNumber>
+        <id>4</id>
+    </MobileNumber>
+    <MobileNumber>
+        <mobileNumber>788</mobileNumber>
+        <id>5</id>
+    </MobileNumber>
+</mobileNumbers>

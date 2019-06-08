@@ -1,0 +1,319 @@
+body {
+	background-color: #fff;
+	font-family: 'Dosis', sans-serif;
+}
+
+.starter-template {
+	padding: 3rem 1.5rem;
+	text-align: center;
+}
+
+#mobileshow    { display:none; }
+
+@media screen and (max-width: 580px) {
+	#mobileshow   { display:block; }
+}
+
+@media print {
+	.container {
+		width: auto;
+		background-color: #fff;
+		display: flex;
+	}
+}
+
+#mobilehide   { display:block; }
+
+@media screen and (max-width: 580px) {
+	#mobilehide  { display:none; }
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: 600;
+
+}
+.bg-grey {
+	background-color: #fff;
+}
+
+.thumbnail {
+	padding: 0 0 15px 0;
+	border: none;
+	border-radius: 0;
+}
+.thumbnail img {
+	width: 100%;
+	height: 100%;
+	margin-bottom: 10px;
+	margin-bottom: 0.25px;
+	background-color: lavenderblush;
+}
+
+@media screen and (max-width: 768px) {
+	.col-sm-4 {
+		text-align: center;
+		margin: 25px 0;
+		margin-top: 0;
+	}
+
+	.col-sm-8  {
+		margin-top: 0;
+		margin-bottom: 0;
+		margin-top: 0;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.col-sm-8  {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	.col-sm-8 {
+		text-align: center;
+		margin: 25px 0;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	hr { width:15em;
+		display:block;
+	}
+}
+
+.footer {
+	margin:0;
+
+	width: 100%;
+}
+
+.btn-outline-light:hover {
+	color: #000;
+	background-color: #fff;
+	border-color: #f8f9fa;
+}
+
+/* Базовый контейнер табов */
+.tabs {
+	min-width: 320px;
+	max-width: 800px;
+	padding: 0px;
+	margin: 0 auto;
+}
+/* Стили секций с содержанием */
+.tabs>section {
+	display: none;
+	padding: 15px;
+	background: #fff;
+	border: 1px solid #ddd;
+}
+.tabs>section>p {
+	margin: 0 0 5px;
+	line-height: 1.5;
+	color: #383838;
+	/* прикрутим анимацию */
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+/* Описываем анимацию свойства opacity */
+
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+/* Прячем чекбоксы */
+.tabs>input {
+	display: none;
+	position: absolute;
+}
+/* Стили переключателей вкладок (табов) */
+.tabs>label {
+	display: inline-block;
+	margin: 0 0 -1px;
+	padding: 15px 25px;
+	font-weight: 600;
+	text-align: center;
+	color: #aaa;
+	border: 0px solid #ddd;
+	border-width: 1px 1px 1px 1px;
+	background: #f1f1f1;
+	border-radius: 3px 3px 0 0;
+}
+/* Шрифт-иконки от Font Awesome в формате Unicode */
+.tabs>label:before {
+	font-family: fontawesome;
+	font-weight: normal;
+	margin-right: 10px;
+}
+/* Изменения стиля переключателей вкладок при наведении */
+
+.tabs>label:hover {
+	color: #888;
+	cursor: pointer;
+}
+/* Стили для активной вкладки */
+.tabs>input:checked+label {
+	color: #555;
+	border-top: 1px solid #009933;
+	border-bottom: 1px solid #fff;
+	background: #fff;
+}
+/* Активация секций с помощью псевдокласса :checked */
+#tab1:checked~#content-tab1, #tab2:checked~#content-tab2 {
+	display: block;
+}
+/* Убираем текст с переключателей 
+* и оставляем иконки на малых экранах
+*/
+
+@media screen and (max-width: 680px) {
+	.tabs>label {
+		font-size: 0;
+	}
+	.tabs>label:before {
+		margin: 0;
+		font-size: 18px;
+	}
+}
+/* Изменяем внутренние отступы 
+*  переключателей для малых экранов
+*/
+@media screen and (max-width: 400px) {
+	.tabs>label {
+		padding: 15px;
+	}
+}
+
+.breadcrumb {
+	font-size: 11px;
+	background-color: transparent;
+	padding: 0;
+	margin: 0;
+}
+
+.navbar-nav {
+	display: flex;
+	list-style: none;
+	list-style-type: none;
+	list-style-position: initial;
+	list-style-image: initial;
+	flex-direction: row;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+.navbar .nav-flex-icons {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	flex-direction: row;
+
+}
+
+.mr-2 {
+	margin-right: .5rem!important;
+}
+
+.navbar-collapse {
+	display: flex!important;
+	flex-basis: 100%;
+	flex-grow: 1;
+	align-items: center;
+	weight: 200;
+}
+
+.rgb-background-button-enter {
+	background-color: rgba(3,169,244,.3);
+	color: black;
+}
+
+ul{
+	margin-top: 0px;
+
+}
+
+.rgb-background-button-sign {
+	background-color: rgb(76, 175, 80);
+	color: black;
+}
+
+.row {
+	display: flex;
+	margin-right: -15px;
+	margin-left: -15px;
+	flex-wrap: nowrap;
+}
+
+.rounded {
+	border-radius: .25rem!important;
+}
+
+.fa {
+	display: inline-block;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+}
+
+@media screen and (max-width: 1300px) {
+	.fast-search-button .main {
+		display: flex;
+	}
+}
+@media screen and (max-height: 750px) {
+	.fast-search-button .main {
+		display: flex;
+	}
+}
+.fast-search-button .main {
+	display: none;
+}
+.fast-search-button, .email-spam-button {
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+	background-color: #33a951;
+	border-radius: 50%;
+	bottom: 20px;
+	box-shadow: 0 3px 24px 0 rgba(0, 0, 0, 0.27);
+	color: #fff;
+	cursor: pointer;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	font-size: 25px;
+	height: 60px;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	position: fixed;
+	right: 20px;
+	transition: all .3s ease;
+	width: 60px;
+	z-index: 5;
+}
+
+.loupe-bg {
+	display: block;
+	background-repeat: no-repeat;
+	width: 27px;
+	height: 27px;
+}

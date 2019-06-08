@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<notebook>
+    <Person>
+        <id>0</id>
+        <firstName>A</firstName>
+        <surname>N</surname>
+        <mobileNumberId>1</mobileNumberId>
+    </Person>
+    <Person>
+        <id>1</id>
+        <firstName>Yen</firstName>
+        <surname>N</surname>
+        <mobileNumberId>1</mobileNumberId>
+    </Person>
+    <Person>
+        <id>2</id>
+        <firstName>J</firstName>
+        <surname>N</surname>
+        <mobileNumberId>2</mobileNumberId>
+    </Person>
+    <Person>
+        <id>3</id>
+        <firstName>Op</firstName>
+        <surname>Re</surname>
+        <mobileNumberId>0</mobileNumberId>
+    </Person>
+    <Person>
+        <id>0</id>
+        <firstName>I</firstName>
+        <surname>K</surname>
+        <mobileNumberId>4</mobileNumberId>
+    </Person>
+</notebook>

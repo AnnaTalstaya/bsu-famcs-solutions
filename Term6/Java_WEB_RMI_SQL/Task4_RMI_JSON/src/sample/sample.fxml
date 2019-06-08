@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="selectedMobileNumberLabel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="828.0" style="-fx-background-color: e3ffc4;" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label fx:id="firstNameNotebookLabel" layoutX="43.0" layoutY="319.0" text="First name:">
+         <font>
+            <Font name="Tahoma" size="15.0" />
+         </font>
+      </Label>
+      <TableView fx:id="notebookTable" layoutX="43.0" layoutY="40.0" prefHeight="270.0" prefWidth="371.0">
+        <columns>
+          <TableColumn fx:id="firstNameNotebookColumn" prefWidth="110.76926040649414" text="First name" />
+          <TableColumn fx:id="surnameNotebookColumn" prefWidth="115.9384765625" text="Surname" />
+            <TableColumn fx:id="mobileNumberNotebookColumn" prefWidth="140.30767822265625" text="Mobile number" />
+        </columns>
+      </TableView>
+      <TableView fx:id="mobileNumberTable" layoutX="545.0" layoutY="40.0" prefHeight="270.0" prefWidth="258.0">
+        <columns>
+          <TableColumn fx:id="mobileNumberColumn" prefWidth="255.50775146484375" text="Mobile number" />
+        </columns>
+      </TableView>
+      <Button fx:id="addMobileNumberButton" layoutX="760.0" layoutY="316.0" mnemonicParsing="false" onAction="#addMobileNumber" text="Add" />
+      <Button fx:id="removeMobileNumberButton" layoutX="739.0" layoutY="357.0" mnemonicParsing="false" onAction="#removeMobileNumber" text="Remove" />
+      <TextField fx:id="mobileNumberTextField" layoutX="545.0" layoutY="316.0" promptText="Mobile number" />
+      <Label fx:id="surnameNotebookLabel" layoutX="43.0" layoutY="351.0" text="Surname:">
+         <font>
+            <Font name="Tahoma" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="firstNameNotebookTextField" layoutX="151.0" layoutY="316.0" promptText="First name" />
+      <TextField fx:id="surnameNotebookTextField" layoutX="151.0" layoutY="348.0" promptText="Surname" />
+      <Button fx:id="addPersonButton" layoutX="42.0" layoutY="390.0" mnemonicParsing="false" onAction="#addPerson" text="Add person" />
+      <Button fx:id="removePersonButton" layoutX="42.0" layoutY="427.0" mnemonicParsing="false" onAction="#removePerson" text="Remove" />
+      <TableView fx:id="findTable" layoutX="447.0" layoutY="503.0" prefHeight="213.0" prefWidth="329.0">
+        <columns>
+          <TableColumn fx:id="firstNameFindColumn" prefWidth="98.95382690429688" text="First name" />
+          <TableColumn fx:id="surnameFindColumn" prefWidth="98.21539306640625" text="Surname" />
+            <TableColumn fx:id="mobileNumberFindColumn" prefWidth="129.96917724609375" text="Mobile number" />
+        </columns>
+      </TableView>
+      <Label fx:id="surnameFindLabel" layoutX="196.0" layoutY="528.0" text="Surname">
+         <font>
+            <Font name="Tahoma" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="mobileNumberFindLabel" layoutX="196.0" layoutY="644.0" prefHeight="19.0" prefWidth="104.0" text="Mobile number">
+         <font>
+            <Font name="Tahoma" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="surnameFindTextField" layoutX="301.0" layoutY="525.0" prefHeight="25.0" prefWidth="131.0" promptText="Surname" />
+      <TextField fx:id="mobileNumberFindTextField" layoutX="301.0" layoutY="641.0" prefHeight="25.0" prefWidth="131.0" promptText="Mobile number" />
+      <Button fx:id="findBySurnameButton" layoutX="197.0" layoutY="562.0" mnemonicParsing="false" onAction="#findBySurname" text="Find by surname" />
+      <Button fx:id="findByMobileNumberButton" layoutX="194.0" layoutY="684.0" mnemonicParsing="false" onAction="#findByMobileNumber" text="Find by mobile number" />
+   </children>
+</AnchorPane>

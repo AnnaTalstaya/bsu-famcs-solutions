@@ -1,0 +1,155 @@
+header {
+
+}
+
+.header-style {
+    text-align: justify;
+    background: #FFF;
+    color:rgb(85, 26, 139);
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    letter-spacing: 1px;
+    overflow: hidden;
+    left: 0px;
+    width: 100%;
+    position: fixed;
+    min-width: 980px;
+    margin-left: 0px;
+    margin-top: 0px;
+    z-index: 50; top: 0px;
+    height: 55px;
+}
+
+header nav {
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    overflow: hidden;
+}
+
+header nav a{
+    white-space: nowrap;
+    text-decoration: none;
+    float:left;
+    padding: 18px 20px;
+    margin-left:15px;
+    color:rgb(85, 26, 139);
+}
+
+header nav a:hover{
+    background-color:#00008B;
+    color:white;
+
+}
+
+.text-header{
+    word-wrap: break-word;
+    text-align: start;
+}
+
+.text-header p{
+    margin:0;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+
+div{
+    display: block;
+}
+
+.sections{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.strc1{
+    display: grid;
+    background-color: #85E8F8;
+    -webkit-box-pack:center;
+    justify-content: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+}
+
+.style-io2bebd6inlineContent, .style-io2bebd6bg{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.style-io2bebd6bg{
+    border:1px solid rgba(0, 0, 0, 1);
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 0;
+}
+
+.style-io2bebd6b{
+    border:0px solid rgba(0, 0, 0, 1);
+    background-color: rgba(255, 255, 255, 0.45);
+    border-radius: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+
+.strc1inlineContent{
+    right: 0;
+    left: 0;
+}
+
+
+.text{
+    word-wrap: break-word;
+    text-align: start;
+    pointer-events: none;
+}
+
+
+
+.text p{
+    margin:0;
+    line-height: normal;
+    letter-spacing: normal;
+}
+
+.text h1{
+    margin: 0;
+    letter-spacing: normal;
+}
+
+.text h4{
+    margin: 0;
+    letter-spacing: normal;
+}
+
+
+.font_0{
+    font:normal normal bold 40px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
+    color: #A0A09F;
+}
+
+.font_4{
+    font:normal normal normal 40px/1.4em din-next-w01-light,din-next-w02-light,din-next-w10-light,sans-serif;
+    color:#605E5E;
+}
+
+.color_11{
+    color:#FFFFFF;
+}
+
+.phone{
+    font-family: "Arial", sans-serif;
+}
+
+.links div { width:90px; display:inline-block; }
+
+

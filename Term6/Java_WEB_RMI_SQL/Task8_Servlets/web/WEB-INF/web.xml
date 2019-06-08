@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+
+    <servlet>
+        <servlet-name>name</servlet-name>
+        <servlet-class>by.talstaya.task08.web.servlet.NamePageServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>name</servlet-name>
+        <url-pattern>/Name</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>dateOfBirth</servlet-name>
+        <servlet-class>by.talstaya.task08.web.servlet.DateOfBirthPageServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>dateOfBirth</servlet-name>
+        <url-pattern>/DateOfBirth</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>education</servlet-name>
+        <servlet-class>by.talstaya.task08.web.servlet.EducationPageServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>education</servlet-name>
+        <url-pattern>/Education</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>experience</servlet-name>
+        <servlet-class>by.talstaya.task08.web.servlet.ExperiencePageServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>experience</servlet-name>
+        <url-pattern>/Experience</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>result</servlet-name>
+        <servlet-class>by.talstaya.task08.web.servlet.ResultPageServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>result</servlet-name>
+        <url-pattern>/Result</url-pattern>
+    </servlet-mapping>
+
+    <jsp-config>
+        <taglib>
+            <taglib-uri>customtags</taglib-uri>
+            <taglib-location>/WEB-INF/tdl/custom.tld</taglib-location>
+        </taglib>
+    </jsp-config>
+
+    <error-page>
+        <exception-type>by.talstaya.task08.web.exception.CustomException</exception-type>
+        <location>/error.jsp</location>
+    </error-page>
+
+</web-app>
+
+
+
