@@ -1,8 +1,0 @@
-*.idea
-*.iml
-*.doc
-*.docx
-/PrivateFiles
-out
-target
-META-INF
