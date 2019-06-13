@@ -1,0 +1,104 @@
+router1
+
+Router>enable
+Router#config t
+Router(config)#interface fastethernet0/0
+Router(config-if)#ip address 200.200.1.1 255.255.255.0
+Router(config-if)#no shutdown
+Router(config-if)#exit
+Router(config)#interface serial0/0
+Router(config-if)#ip address 200.200.4.1 255.255.255.0
+Router(config-if)#clock rate 64000
+Router(config-if)#no shutdown
+Router(config-if)#exit
+Router(config)#interface serial0/1
+Router(config-if)#ip address 200.200.5.1 255.255.255.0
+Router(config-if)#clock rate 64000
+Router(config-if)#no shutdown
+Router(config-if)#exit
+Router(config)#router rip
+Router(config-router)#version 2
+Router(config-router)#network 200.200.1.0
+Router(config-router)#network 200.200.4.0
+Router(config-router)#network 200.200.5.0
+Router(config-router)#exit
+--------------------------------------------------
+PC1
+
+ip address 200.200.1.2
+mask 255.255.255.0
+gateway 200.200.1.1
+--------------------------------------------------
+router2
+
+Router>enable
+Router#config t
+Router(config)#interface fastethernet0/0
+Router(config-if)#ip address 200.200.2.1 255.255.255.0
+Router(config-if)#no shutdown
+Router(config-if)#exit
+Router(config)#interface serial0/0
+Router(config-if)#ip address 200.200.4.2 255.255.255.0
+Router(config-if)#no shutdown
+Router(config-if)#exit
+Router(config)#interface serial0/1
+Router(config-if)#ip address 200.200.6.1 255.255.255.0
+Router(config-if)#clock rate 64000
+Router(config-if)#no shutdown
+Router(config-if)#exit
+Router(config)#router rip
+Router(config-router)#version 2
+Router(config-router)#network 200.200.2.0
+Router(config-router)#network 200.200.4.0
+Router(config-router)#network 200.200.6.0
+Router(config-router)#exit
+-----------------------------------------------
+PC2
+
+ip address 200.200.2.2
+mask 255.255.255.0
+gateway 200.200.2.1
+------------------------------------------------
+router3
+
+Router>enable
+Router#config t
+Router(config)#interface fastethernet0/0
+Router(config-if)#ip address 200.200.3.1 255.255.255.0
+Router(config-if)#no shutdown
+Router(config-if)#exit
+Router(config)#interface serial0/0
+Router(config-if)#ip address 200.200.5.2 255.255.255.0
+Router(config-if)#no shutdown
+Router(config-if)#exit
+Router(config)#interface serial0/1
+Router(config-if)#ip address 200.200.6.2 255.255.255.0
+Router(config-if)#no shutdown
+Router(config-if)#exit
+Router(config)#router rip
+Router(config-router)#version 2
+Router(config-router)#network 200.200.3.0
+Router(config-router)#network 200.200.5.0
+Router(config-router)#network 200.200.6.0
+Router(config-router)#exit
+----------------------------------------------
+Server1
+
+Во вкладке Desktop (как в обычном компе настройка короч)
+
+ip address 200.200.3.2
+mask 255.255.255.0
+gateway 200.200.3.1
+
+Во вкладке Services слева нажимаешь на DHCP
+
+default gateway 200.200.3.1
+start ip address 200.200.3.3
+subnet mask 255.255.255.0
+maximum number of users 5
+
+Остальные поля не трогаешь
+Нажимаешь Save
+
+В PC3 и PC4 заходишь в Desktop и в ip configuration нажимаешь DHCP слева 
+вверху
