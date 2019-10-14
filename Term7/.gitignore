@@ -1,4 +1,4 @@
 *.txt
-.doc
+*.doc
 *.pdf
 __pycache__
