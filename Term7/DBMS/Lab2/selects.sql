@@ -15,7 +15,7 @@ FROM
     INNER JOIN person ON set_of_stew_pans.person_id = person.id
     INNER JOIN sex ON person.sex_id = sex.id
 WHERE
-    manager.name = 'Nikita Popoiu'
+    manager.name =: param
     AND EXTRACT(MONTH FROM date_of_creation) = EXTRACT(MONTH FROM sysdate)
     AND EXTRACT(YEAR FROM date_of_creation) = EXTRACT(YEAR FROM sysdate);
 
